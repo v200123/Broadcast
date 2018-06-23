@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">刘畅的程序</string>
+    <string name="btn_switch">读取你的电话本</string>
+    <string name="Load_in">测试永久存储</string>
+    <string name="RemenberPasscode">记住密码</string>
+    <string name="Thread">多线程实验</string>
+    <string name="Service">后台服务</string>
+</resources>
