@@ -14,7 +14,7 @@ import java.util.Random;
 public class Thread_Test extends AppCompatActivity implements View.OnClickListener {
                 private Fruit[] fruits = {new Fruit("Orange", R.mipmap.p21),
                         new Fruit("Watermelon",R.mipmap.p21),
-                new Fruit("Pear", R.mipmap.p21), new Fruit("Grape", R.mipmap.picture),
+                new Fruit("Pear", R.mipmap.p21), new Fruit("Grape", R.mipmap.p21),
                 new Fruit("Pineapple", R.mipmap.p21),
                         new Fruit("Strawberry",R.mipmap.navigate),
                 new Fruit("Cherry", R.mipmap.navigate), new Fruit("Mango", R.mipmap.navigate)};
@@ -23,9 +23,9 @@ public class Thread_Test extends AppCompatActivity implements View.OnClickListen
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.test_cardview);
+        setContentView(R.layout.fruit_recycle_view);
         initFruits();
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.Fruit_RecycleView);
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         GridLayoutManager layoutManager = new GridLayoutManager(this, 2);
         recyclerView.setLayoutManager(layoutManager);
         adapter = new FruitAdapter(fruitList);

@@ -1,29 +1,20 @@
 package com.example.lc.broadcast;
 
-import android.Manifest;
 import android.annotation.SuppressLint;
-import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.Bundle;
 import android.support.design.widget.NavigationView;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.support.v7.widget.DialogTitle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
-import android.widget.Toolbar;
-
-import com.example.lc.broadcast.load.LearnLoad;
 
 public class MainActivity extends AppCompatActivity {
     private final static String TAG = "lc.lc.study";
@@ -55,7 +46,14 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
-        findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btn_Another).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this,com.example.lc.broadcast.another_view.Another_Activity_Main.class);
+                startActivity(i);
+            }
+        });
+        findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {           //这是广播消息的按钮
 
             @Override
             public void onClick(View v) {
@@ -64,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         });
         findViewById(R.id.btn_card).setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) {//这是卡片视图的
                 Intent i = new Intent(MainActivity.this,Thread_Test.class);
                 startActivity(i);
             }

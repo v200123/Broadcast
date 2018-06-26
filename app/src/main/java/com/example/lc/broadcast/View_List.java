@@ -1,7 +1,6 @@
 package com.example.lc.broadcast;
 
 import android.Manifest;
-import android.content.Context;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.os.Bundle;
@@ -19,6 +18,9 @@ import java.util.List;
 
 import static android.R.layout.simple_list_item_1;
 
+/**
+ * 这是读取联系人的
+ */
 public class View_List extends AppCompatActivity {
     List<String> contain = new  ArrayList<>();
     ArrayAdapter<String> adapter= null;

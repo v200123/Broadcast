@@ -19,4 +19,13 @@
         android:layout_width="match_parent"
         android:layout_height="35dp"
         android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="          这是一个可以存储东西的界面，当你输入文本后，按存储，下方就会显示你刚才输入的" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="          当然，你也可以载输入后，按返回键，再次进入该界面，你也可以看见上次输入的" />
 </LinearLayout>

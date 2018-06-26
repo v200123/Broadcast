@@ -11,31 +11,35 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity">
-        </activity>
-
-        <activity
-            android:name=".MainLogin">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        android:name=".MainLogin"
+        >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
     </activity>
         <service
-            android:name=".MyService"
-            android:enabled="true">
-
-        </service>
-        <activity android:name=".View_List">
-
+        android:name=".MyService"
+        android:enabled="true">
+    </service>
+        <activity
+            android:name=".another_view.Another_Activity_Main"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+            >
         </activity>
-
+        <activity
+            android:name=".another_view.Text_Brain">
+        </activity>
+        <activity
+            android:name=".MainActivity">
+        </activity>
+        <activity android:name=".View_List">
+        </activity>
         <activity
             android:name=".load.LearnLoad">
         </activity>
 <activity
     android:name=".Thread_Test">
-
 </activity>
         <activity
             android:name=".Test_Service">

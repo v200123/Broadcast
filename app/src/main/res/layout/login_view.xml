@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -10,15 +12,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="请输入用户名"
-        android:textAppearance="@android:style/TextAppearance.Widget.TextView.PopupMenu" />
-
-    <EditText
-        android:id="@+id/Login_Passcode"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="请输入用户密码"
         android:textAppearance="@android:style/TextAppearance.Widget.TextView.PopupMenu"
-        android:inputType="textPassword"/>
+        android:inputType="" />
+    <EditText
+    android:id="@+id/Login_Passcode"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="请输入用户密码"
+    android:textAppearance="@android:style/TextAppearance.Widget.TextView.PopupMenu"
+    android:inputType="textPassword"/>
+
 <LinearLayout
     android:orientation="horizontal"
     android:layout_width="match_parent"
@@ -35,9 +38,12 @@
         android:id="@+id/btn_login_in"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:text="登录" />
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="60dp"
+        android:text="登录"
+        android:visibility="visible" />
 </LinearLayout>
+
     <TextView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -46,4 +52,40 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="默认密码为：123456"/>
+
+    <Button
+        android:id="@+id/change_passcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:text="@string/Change_Passcode" />
+    <EditText
+        android:id="@+id/Changed_User_Name"
+        android:textAppearance="@android:style/TextAppearance.Widget.TextView.PopupMenu"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="text"
+        android:layout_marginTop="8dp"
+        android:hint="@string/Name01"
+        android:visibility="invisible"
+        />
+    <EditText
+        android:id="@+id/Changed_User_Passcode"
+        android:textAppearance="@android:style/TextAppearance.Widget.TextView.PopupMenu"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:hint="@string/Passcode01"
+        android:visibility="invisible"/>
+    <Button
+        android:id="@+id/Ensure_Changed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible"
+        android:text="@string/Ensure"
+
+        />
 </LinearLayout>
