@@ -1,7 +1,6 @@
 package com.example.lc.broadcast.another_view;
 
 import android.content.Context;
-import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -17,7 +16,7 @@ import java.util.List;
 /**
  * 这个是Adpter的程序
  */
-public class CrimeHolder extends RecyclerView.Adapter<CrimeHolder.ViewHolder> implements View.OnClickListener{
+public class CrimeHolder extends RecyclerView.Adapter<CrimeHolder.ViewHolder>{
     private List<Crime> mCrimeList;
     private Context mContext;
     public CrimeHolder(List<Crime> crimeList) {
@@ -33,7 +32,6 @@ public class CrimeHolder extends RecyclerView.Adapter<CrimeHolder.ViewHolder> im
         }
         LayoutInflater layoutInflater = LayoutInflater.from(mContext);
        View v =  layoutInflater.inflate(R.layout.crime_cycle_item,parent,false);
-       v.setOnClickListener(this);
         return new ViewHolder(v);
     }
 
@@ -49,10 +47,7 @@ public class CrimeHolder extends RecyclerView.Adapter<CrimeHolder.ViewHolder> im
         return mCrimeList.size();
     }
 
-    @Override
-    public void onClick(View v) {
-            Intent i = new Intent(mContext,CriminalIntent.class);
-    }
+
 
 
     public class ViewHolder extends RecyclerView.ViewHolder  {
@@ -60,7 +55,6 @@ public class CrimeHolder extends RecyclerView.Adapter<CrimeHolder.ViewHolder> im
         CheckBox    mCheckBox;
         public ViewHolder(View itemView) {
             super(itemView);
-            itemView.setOnClickListener(this);
             mInformation = itemView.findViewById(R.id.Crime_Information);
             mDate = itemView.findViewById(R.id.Crime_Date);
             mCheckBox = itemView.findViewById(R.id.Crime_ensure_CheckBox);
