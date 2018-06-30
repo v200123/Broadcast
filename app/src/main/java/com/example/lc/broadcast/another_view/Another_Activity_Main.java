@@ -15,6 +15,7 @@ public class Another_Activity_Main extends AppCompatActivity implements View.OnC
         super.onCreate(savedInstanceState);
         setContentView(R.layout.another_main_activity);
     findViewById(R.id.TextBrian).setOnClickListener(this);
+    findViewById(R.id.Criminallntent).setOnClickListener(this);
     }
 
 
@@ -24,6 +25,11 @@ public class Another_Activity_Main extends AppCompatActivity implements View.OnC
                     case        R.id.TextBrian  :
                         Intent i = new Intent(Another_Activity_Main.this,Text_Brain.class);
                         startActivity(i);
+                        break;
+                    case R.id.Criminallntent :
+                            Intent i1= new Intent(Another_Activity_Main.this,CrimeList.class);
+                            startActivity(i1);
+                            break;
                 }
     }
 }

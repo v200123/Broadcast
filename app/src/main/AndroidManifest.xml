@@ -10,40 +10,49 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
+                             <activity
         android:name=".MainLogin"
         >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
-        <service
+        <!--<intent-filter>-->
+            <!--&lt;!&ndash;<action android:name="android.intent.action.MAIN" />&ndash;&gt;-->
+            <!--&lt;!&ndash;<category android:name="android.intent.category.LAUNCHER" />&ndash;&gt;-->
+        <!--</intent-filter>-->
+                            </activity>
+                      <service
         android:name=".MyService"
         android:enabled="true">
-    </service>
-        <activity
+                     </service>
+                           <activity
             android:name=".another_view.Another_Activity_Main"
             android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
             >
-        </activity>
-        <activity
+                               <intent-filter>
+                               <action android:name="android.intent.action.MAIN" />
+                               <category android:name="android.intent.category.LAUNCHER" />
+                               </intent-filter>
+                           </activity>
+                            <activity
             android:name=".another_view.Text_Brain">
-        </activity>
-        <activity
+                             </activity>
+                            <activity
             android:name=".MainActivity">
-        </activity>
+                             </activity>
         <activity android:name=".View_List">
-        </activity>
-        <activity
+                              </activity>
+                                <activity
             android:name=".load.LearnLoad">
-        </activity>
+                              </activity>
 <activity
     android:name=".Thread_Test">
 </activity>
         <activity
             android:name=".Test_Service">
         </activity>
+        <activity android:name=".another_view.CriminalIntent">
+        </activity>
+        <activity android:name=".another_view.CrimeList">
+        </activity>
+
     </application>
 
 </manifest>

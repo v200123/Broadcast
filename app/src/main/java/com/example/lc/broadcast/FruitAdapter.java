@@ -12,7 +12,6 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class FruitAdapter extends RecyclerView.Adapter<FruitAdapter.ViewHolder> {
@@ -20,7 +19,7 @@ public class FruitAdapter extends RecyclerView.Adapter<FruitAdapter.ViewHolder> 
         this.fruitList = fruitList;
     }
 
-    private List<Fruit> fruitList = new ArrayList<>();
+    private List<Fruit> fruitList ;
     private Context mContext;
     @NonNull
     @Override

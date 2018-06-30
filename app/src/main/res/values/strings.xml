@@ -12,4 +12,5 @@
     <string name="TextBrian">测试你的智商</string>
     <string name="Right">正确</string>
     <string name="Wrong">错误</string>
+    <string name="title">TITLE</string>
 </resources>

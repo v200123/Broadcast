@@ -20,7 +20,8 @@
                         android:layout_height="wrap_content"
                         android:text="@string/TextBrian"/>
             <Button
-
+                        android:id="@+id/Criminallntent"
+                    android:text="跳转到记录犯罪信息"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
