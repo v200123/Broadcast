@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/Crime_Information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="犯罪信息"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Crime_Date"
+            android:layout_width="wrap_content"
+            android:layout_weight="9"
+            android:layout_height="wrap_content"
+            android:hint="犯罪日期" />
+
+        <CheckBox
+            android:id="@+id/Crime_ensure_CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="解决了么"
+            android:layout_gravity="end" />
+    </LinearLayout>
+</LinearLayout>
